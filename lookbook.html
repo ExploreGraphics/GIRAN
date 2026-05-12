@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lookbook — GIRAN</title>
+    <title>Lookbook - GIRAN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lookbook.css">
+    <style>
+        .lookbook-img {
+            position: relative;
+            overflow: hidden;
+        }
+        .lookbook-img::after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            width: 70px;
+            height: 70px;
+            background-image: url('giran-crest-web.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
         <a href="index.html" class="logo">
-            <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
+            <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
             <span class="logo-text">GIRAN</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -42,73 +62,81 @@
 
     <section class="lookbook-grid">
         <div class="lookbook-item large">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #1E3A2F, #0A0A0A);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/capkings.ng/bcab98af07c9452f18d7dae689ca6e37a2ab6181.jpg" alt="Royal Fila Cap">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">COMBAT BOOTS</span>
-                    <h3>Giran Combat Boots</h3>
+                    <span class="lookbook-tag">ROYAL FILA CAP</span>
+                    <h3>Royal Fila Cap</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #2D5A3D, #1E3A2F);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/101ee054d32913b5763bf355b87314be81ab94c6.png" alt="Heritage Coral Beads">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">CREST BEANIE</span>
-                    <h3>Crest Beanie</h3>
+                    <span class="lookbook-tag">HERITAGE CORAL</span>
+                    <h3>Heritage Coral Beads</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #3B4D3F, #0D1F17);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/media.enomy.com/1287f6332d922c66bd08fbe9b061b234f5fd9559.jpg" alt="Aso Oke Wrap">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">HERITAGE DENIM</span>
-                    <h3>Heritage Denim Jacket</h3>
+                    <span class="lookbook-tag">ASO OKE</span>
+                    <h3>Aso Oke Wrap</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #0D1F17, #1E3A2F);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/a0c30de5611fc26e7293aba6a69e4bbfbd199ea1.png" alt="Imperial Agbada">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">TRENCH COAT</span>
-                    <h3>Royal Trench Coat</h3>
+                    <span class="lookbook-tag">AGBADA</span>
+                    <h3>Imperial Agbada</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item large">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #1E3A2F, #3B4D3F);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/africanthings.org/fa2447e0a7a3dda9924f183f12ed9b492508e665.jpeg" alt="Heritage Leather Sandals">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">ACCESSORIES</span>
-                    <h3>Crest Chain Necklace</h3>
+                    <span class="lookbook-tag">FOOTWEAR</span>
+                    <h3>Heritage Leather Sandals</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #2A2A2A, #1E3A2F);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/roseafricanfabrics.co.uk/79410fc9ce161c071c4dbbd42ae73f350aed83d4.jpg" alt="Green Gold Ankara">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">GOTHIC TEE</span>
-                    <h3>Gothic Crest Tee</h3>
+                    <span class="lookbook-tag">ANKARA</span>
+                    <h3>Green Gold Ankara</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #1E3A2F, #0D1F17);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/afrilege.com/3332191bb9fa77a1ca31bf9697f2b94deb875b0b.jpg" alt="Coral Bracelet">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">CARGO PANTS</span>
-                    <h3>Heritage Cargo Pants</h3>
+                    <span class="lookbook-tag">BRACELET</span>
+                    <h3>Coral and Gold Bracelet</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
         </div>
         <div class="lookbook-item">
-            <div class="lookbook-img" style="background: linear-gradient(135deg, #3B4D3F, #2D5A3D);">
+            <div class="lookbook-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/i.ebayimg.com/7b25d5e6fbe050857fc13a40604e8f0d66327353.JPG" alt="Royal Coral Set">
                 <div class="lookbook-overlay">
-                    <span class="lookbook-tag">BOMBER JACKET</span>
-                    <h3>Eagle Bomber Jacket</h3>
+                    <span class="lookbook-tag">CORAL SET</span>
+                    <h3>Royal Coral Set</h3>
                     <a href="shop.html" class="btn btn-outline">Shop Now</a>
                 </div>
             </div>
@@ -119,20 +147,20 @@
         <div class="quote-content">
             <span class="quote-mark">"</span>
             <blockquote>Fashion is the armor to survive the reality of everyday life.</blockquote>
-            <cite>— GIRAN Philosophy</cite>
+            <cite>- GIRAN Philosophy</cite>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
-                <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
-                <p>Luxury streetwear forged in rebellion. Built for legacy.</p>
+                <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
+                <p>Luxury Nigerian fashion forged in rebellion. Built for legacy.</p>
                 <div class="footer-social"><a href="#">IG</a><a href="#">X</a><a href="#">TT</a></div>
             </div>
             <div class="footer-col">
                 <h4>Shop</h4>
-                <ul><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Boots</a></li><li><a href="shop.html">Denim</a></li><li><a href="shop.html">Accessories</a></li></ul>
+                <ul><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Footwear</a></li><li><a href="shop.html">Textiles</a></li><li><a href="shop.html">Accessories</a></li></ul>
             </div>
             <div class="footer-col">
                 <h4>Brand</h4>
@@ -143,7 +171,7 @@
                 <ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Size Guide</a></li></ul>
             </div>
         </div>
-        <div class="footer-bottom"><p>© 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p></div>
+        <div class="footer-bottom"><p>(c) 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p></div>
     </footer>
 
     <script src="js/main.js"></script>

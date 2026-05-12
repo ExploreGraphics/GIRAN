@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIRAN — Stubborn Heritage</title>
+    <title>GIRAN - Stubborn Heritage</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <style>
+        .product-image, .product-image-shop, .lookbook-img, .story-visual, .showcase-img {
+            position: relative;
+            overflow: hidden;
+        }
+        .product-image::after, .product-image-shop::after, .lookbook-img::after, .story-visual::after, .showcase-img::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('giran-crest-web.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: 2;
+        }
+        .lookbook-img::after, .story-visual::after, .showcase-img::after {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <a href="index.html" class="logo">
-            <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
+            <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
             <span class="logo-text">GIRAN</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -29,12 +52,9 @@
                 <span class="cart-count">2</span>
             </li>
         </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
-        </div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
             <div class="hero-gradient"></div>
@@ -42,13 +62,13 @@
         </div>
         <div class="hero-content">
             <div class="hero-logo-wrap">
-                <img src="images/giran-logo-visible.png" alt="GIRAN Crest" class="hero-crest">
+                <img src="giran-crest-web.png" alt="GIRAN Crest" class="hero-crest">
             </div>
             <h1 class="hero-slogan">
                 <span class="slogan-line">STUBBORN</span>
                 <span class="slogan-line heritage">HERITAGE</span>
             </h1>
-            <p class="hero-desc">Luxury streetwear forged in rebellion. Built for legacy.</p>
+            <p class="hero-desc">Luxury Nigerian fashion forged in rebellion. Built for legacy.</p>
             <div class="hero-buttons">
                 <a href="shop.html" class="btn btn-primary">Shop Collection</a>
                 <a href="about.html" class="btn btn-outline">Explore Legacy</a>
@@ -62,29 +82,27 @@
         </div>
     </section>
 
-    <!-- Marquee -->
     <div class="marquee-container">
         <div class="marquee-track">
             <span class="marquee-item">Stubborn Heritage</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Luxury in Rebellion</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Built for Legacy</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Modern Royalty</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Stubborn Heritage</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Luxury in Rebellion</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Built for Legacy</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
             <span class="marquee-item">Modern Royalty</span>
-            <span class="marquee-item">•</span>
+            <span class="marquee-item">|</span>
         </div>
     </div>
 
-    <!-- Featured Collection -->
     <section class="featured">
         <div class="container">
             <div class="section-header animate-on-scroll">
@@ -95,65 +113,57 @@
             <div class="products-grid">
                 <div class="product-card animate-on-scroll delay-1">
                     <div class="product-image">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #1E3A2F 0%, #0D1F17 50%, #1A1A1A 100%);">
-                            <span class="product-icon">⚔</span>
-                        </div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/capkings.ng/bcab98af07c9452f18d7dae689ca6e37a2ab6181.jpg" alt="Royal Fila Cap" class="product-img">
                         <div class="product-tag">NEW</div>
                         <div class="product-overlay">
                             <button class="btn btn-primary">Quick View</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <span class="product-cat">Footwear</span>
-                        <h3>Giran Combat Boots</h3>
-                        <p class="product-desc">Matte green leather, silver crest hardware</p>
+                        <span class="product-cat">Headwear</span>
+                        <h3>Royal Fila Cap</h3>
+                        <p class="product-desc">Emerald velvet with gold embroidery, traditional Yoruba craftsmanship</p>
                         <div class="product-price">
-                            <span class="price">₦185,000</span>
+                            <span class="price">N85,000</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-card animate-on-scroll delay-2">
                     <div class="product-image">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #2D5A3D 0%, #1E3A2F 50%, #0A0A0A 100%);">
-                            <span class="product-icon">👑</span>
-                        </div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/101ee054d32913b5763bf355b87314be81ab94c6.png" alt="Heritage Coral Beads" class="product-img">
                         <div class="product-tag hot">EXCLUSIVE</div>
                         <div class="product-overlay">
                             <button class="btn btn-primary">Quick View</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <span class="product-cat">Headwear</span>
-                        <h3>Crest Beanie</h3>
-                        <p class="product-desc">Embroidered crest, gemstone detail</p>
+                        <span class="product-cat">Accessories</span>
+                        <h3>Heritage Coral Beads</h3>
+                        <p class="product-desc">Authentic coral with gold filigree clasp, royal Nigerian tradition</p>
                         <div class="product-price">
-                            <span class="price">₦45,000</span>
+                            <span class="price">N125,000</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-card animate-on-scroll delay-3">
                     <div class="product-image">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #3B4D3F 0%, #1E3A2F 50%, #0D1F17 100%);">
-                            <span class="product-icon">⛓</span>
-                        </div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/media.enomy.com/1287f6332d922c66bd08fbe9b061b234f5fd9559.jpg" alt="Aso Oke Wrap" class="product-img">
                         <div class="product-overlay">
                             <button class="btn btn-primary">Quick View</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <span class="product-cat">Denim</span>
-                        <h3>Heritage Denim Jacket</h3>
-                        <p class="product-desc">Green wash denim, crest patch</p>
+                        <span class="product-cat">Textiles</span>
+                        <h3>Aso Oke Wrap</h3>
+                        <p class="product-desc">Handwoven Yoruba textile, green and gold stripes, premium quality</p>
                         <div class="product-price">
-                            <span class="price">₦125,000</span>
+                            <span class="price">N95,000</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-card animate-on-scroll delay-4">
                     <div class="product-image">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #0D1F17 0%, #1E3A2F 50%, #2A2A2A 100%);">
-                            <span class="product-icon">🛡</span>
-                        </div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/a0c30de5611fc26e7293aba6a69e4bbfbd199ea1.png" alt="Imperial Agbada" class="product-img">
                         <div class="product-tag">NEW</div>
                         <div class="product-overlay">
                             <button class="btn btn-primary">Quick View</button>
@@ -161,10 +171,10 @@
                     </div>
                     <div class="product-info">
                         <span class="product-cat">Outerwear</span>
-                        <h3>Royal Trench Coat</h3>
-                        <p class="product-desc">Heavy silhouette, military inspired</p>
+                        <h3>Imperial Agbada</h3>
+                        <p class="product-desc">Gold embroidered royal robe, hand-stitched traditional patterns</p>
                         <div class="product-price">
-                            <span class="price">₦210,000</span>
+                            <span class="price">N285,000</span>
                         </div>
                     </div>
                 </div>
@@ -175,22 +185,20 @@
         </div>
     </section>
 
-    <!-- Brand Story -->
     <section class="brand-story">
         <div class="story-visual">
-            <div class="story-img" style="background: linear-gradient(135deg, rgba(30,58,47,0.3), rgba(10,10,10,0.9));"></div>
+            <img src="https://kimi-web-img.moonshot.cn/img/africanthings.org/fa2447e0a7a3dda9924f183f12ed9b492508e665.jpeg" alt="GIRAN Heritage Leather Sandals" class="story-img">
             <div class="story-accent"></div>
         </div>
         <div class="story-content">
             <span class="section-label">Our Story</span>
             <h2 class="section-title">THE LEGACY<br>OF <span>GIRAN</span></h2>
-            <p class="story-text">GIRAN is a luxury streetwear brand inspired by heritage, power, rebellion, and identity. The brand merges rugged craftsmanship with elevated fashion aesthetics to create timeless statement pieces.</p>
-            <p class="story-text">Every stitch carries the weight of legacy. Every design speaks the language of those who refuse to conform. We don't follow trends — we forge them from the fires of tradition and the anvil of innovation.</p>
+            <p class="story-text">GIRAN is a luxury Nigerian fashion brand inspired by heritage, power, rebellion, and identity. The brand merges traditional craftsmanship with elevated fashion aesthetics to create timeless statement pieces rooted in Yoruba, Igbo, and Hausa traditions.</p>
+            <p class="story-text">Every stitch carries the weight of legacy. Every design speaks the language of those who refuse to conform. From coral beads to Aso Oke, from Fila caps to handwoven textiles - we do not follow trends, we forge them from the fires of tradition and the anvil of innovation.</p>
             <a href="about.html" class="btn btn-gold">Read Our Story</a>
         </div>
     </section>
 
-    <!-- Signature Design -->
     <section class="signature">
         <div class="container">
             <div class="section-header animate-on-scroll">
@@ -200,23 +208,38 @@
             <div class="signature-grid">
                 <div class="sig-card animate-on-scroll delay-1">
                     <div class="sig-icon">
-                        <img src="images/giran-logo-visible.png" alt="Crest">
+                        <img src="giran-crest-web.png" alt="Crest">
                     </div>
                     <h3>Crest Logos</h3>
-                    <p>The GIRAN crest — a symbol of stubborn heritage, worn with pride by those who dare to stand apart.</p>
+                    <p>The GIRAN crest - a symbol of stubborn heritage, worn with pride by those who dare to stand apart.</p>
                 </div>
                 <div class="sig-card animate-on-scroll delay-2">
-                    <div class="sig-icon">🖋</div>
+                    <div class="sig-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
                     <h3>Gothic Typography</h3>
                     <p>Cinzel and custom serif fonts that echo the gravitas of medieval manuscripts and modern rebellion.</p>
                 </div>
                 <div class="sig-card animate-on-scroll delay-3">
-                    <div class="sig-icon">💎</div>
+                    <div class="sig-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
                     <h3>Gemstone Detailing</h3>
                     <p>Emerald, ruby, and sapphire accents that catch the light and command attention in any room.</p>
                 </div>
                 <div class="sig-card animate-on-scroll delay-4">
-                    <div class="sig-icon">⚔</div>
+                    <div class="sig-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
                     <h3>Heavy Silhouettes</h3>
                     <p>Military-inspired cuts and architectural shapes that project power, confidence, and unyielding presence.</p>
                 </div>
@@ -224,7 +247,6 @@
         </div>
     </section>
 
-    <!-- Product Showcase Carousel -->
     <section class="showcase">
         <div class="showcase-header">
             <span class="section-label">Showcase</span>
@@ -232,32 +254,32 @@
         </div>
         <div class="showcase-carousel">
             <div class="showcase-slide active">
-                <div class="showcase-img" style="background: linear-gradient(135deg, #1E3A2F, #0A0A0A);">
-                    <span class="showcase-label">COMBAT BOOTS</span>
+                <div class="showcase-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/capkings.ng/bcab98af07c9452f18d7dae689ca6e37a2ab6181.jpg" alt="Royal Fila Cap">
                 </div>
                 <div class="showcase-info">
-                    <h3>Giran Combat Boots</h3>
-                    <p>Matte forest green leather with silver crest hardware. Built for the streets, designed for royalty.</p>
+                    <h3>Royal Fila Cap</h3>
+                    <p>Emerald velvet with gold embroidery. Built for royalty, designed for the modern sovereign.</p>
                     <a href="shop.html" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
             <div class="showcase-slide">
-                <div class="showcase-img" style="background: linear-gradient(135deg, #3B4D3F, #1E3A2F);">
-                    <span class="showcase-label">HERITAGE DENIM</span>
+                <div class="showcase-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/media.enomy.com/1287f6332d922c66bd08fbe9b061b234f5fd9559.jpg" alt="Aso Oke Collection">
                 </div>
                 <div class="showcase-info">
-                    <h3>Heritage Denim Collection</h3>
-                    <p>Green wash denim with embroidered crest patches. Rugged elegance for the modern rebel.</p>
+                    <h3>Aso Oke Collection</h3>
+                    <p>Handwoven Yoruba textiles with green and gold stripes. Rugged elegance for the modern rebel.</p>
                     <a href="shop.html" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
             <div class="showcase-slide">
-                <div class="showcase-img" style="background: linear-gradient(135deg, #2D5A3D, #0D1F17);">
-                    <span class="showcase-label">ACCESSORIES</span>
+                <div class="showcase-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/101ee054d32913b5763bf355b87314be81ab94c6.png" alt="Heritage Coral Beads">
                 </div>
                 <div class="showcase-info">
                     <h3>Royal Accessories</h3>
-                    <p>Beanies, chains, and crest-adorned pieces that complete the GIRAN look.</p>
+                    <p>Coral beads, fila caps, and crest-adorned pieces that complete the GIRAN look.</p>
                     <a href="shop.html" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
@@ -269,7 +291,6 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
     <section class="newsletter">
         <div class="newsletter-content">
             <span class="section-label">Stay Connected</span>
@@ -282,12 +303,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
-                <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
-                <p>Luxury streetwear forged in rebellion. Built for legacy. Worn by those who refuse to conform.</p>
+                <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
+                <p>Luxury Nigerian fashion forged in rebellion. Built for legacy. Worn by those who refuse to conform.</p>
                 <div class="footer-social">
                     <a href="#">IG</a>
                     <a href="#">X</a>
@@ -298,8 +318,8 @@
                 <h4>Shop</h4>
                 <ul>
                     <li><a href="shop.html">New Arrivals</a></li>
-                    <li><a href="shop.html">Boots</a></li>
-                    <li><a href="shop.html">Denim</a></li>
+                    <li><a href="shop.html">Footwear</a></li>
+                    <li><a href="shop.html">Textiles</a></li>
                     <li><a href="shop.html">Accessories</a></li>
                 </ul>
             </div>
@@ -321,7 +341,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p>
+            <p>(c) 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 

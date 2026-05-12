@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop — GIRAN</title>
+    <title>Shop - GIRAN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shop.css">
+    <style>
+        .product-image-shop {
+            position: relative;
+            overflow: hidden;
+        }
+        .product-image-shop::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('giran-crest-web.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
         <a href="index.html" class="logo">
-            <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
+            <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
             <span class="logo-text">GIRAN</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -46,8 +66,8 @@
                 <h4>Category</h4>
                 <ul class="filter-list">
                     <li><label><input type="checkbox" checked> All Items</label></li>
-                    <li><label><input type="checkbox"> Boots</label></li>
-                    <li><label><input type="checkbox"> Denim</label></li>
+                    <li><label><input type="checkbox"> Footwear</label></li>
+                    <li><label><input type="checkbox"> Textiles</label></li>
                     <li><label><input type="checkbox"> Headwear</label></li>
                     <li><label><input type="checkbox"> Outerwear</label></li>
                     <li><label><input type="checkbox"> Accessories</label></li>
@@ -56,9 +76,9 @@
             <div class="filter-group">
                 <h4>Price Range</h4>
                 <div class="price-range">
-                    <span>₦20K</span>
+                    <span>N20K</span>
                     <input type="range" min="20000" max="500000" value="500000">
-                    <span>₦500K</span>
+                    <span>N500K</span>
                 </div>
             </div>
             <div class="filter-group">
@@ -85,152 +105,152 @@
             <div class="products-grid-shop">
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #1E3A2F, #0D1F17);"><span class="p-icon">⚔</span></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/capkings.ng/bcab98af07c9452f18d7dae689ca6e37a2ab6181.jpg" alt="Royal Fila Cap" class="product-img-shop">
                         <div class="product-tag-shop">NEW</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
-                    </div>
-                    <div class="product-info-shop">
-                        <span class="product-cat-shop">Footwear</span>
-                        <h3>Giran Combat Boots</h3>
-                        <div class="product-price-shop"><span class="current-price">₦185,000</span></div>
-                    </div>
-                </div>
-                <div class="product-card-shop">
-                    <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #2D5A3D, #1E3A2F);"><span class="p-icon">👑</span></div>
-                        <div class="product-tag-shop exclusive">EXCLUSIVE</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
                         <span class="product-cat-shop">Headwear</span>
-                        <h3>Crest Beanie</h3>
-                        <div class="product-price-shop"><span class="current-price">₦45,000</span></div>
+                        <h3>Royal Fila Cap</h3>
+                        <div class="product-price-shop"><span class="current-price">N85,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #3B4D3F, #1E3A2F);"><span class="p-icon">⛓</span></div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
-                    </div>
-                    <div class="product-info-shop">
-                        <span class="product-cat-shop">Denim</span>
-                        <h3>Heritage Denim Jacket</h3>
-                        <div class="product-price-shop"><span class="current-price">₦125,000</span></div>
-                    </div>
-                </div>
-                <div class="product-card-shop">
-                    <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #0D1F17, #1E3A2F);"><span class="p-icon">🛡</span></div>
-                        <div class="product-tag-shop">NEW</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
-                    </div>
-                    <div class="product-info-shop">
-                        <span class="product-cat-shop">Outerwear</span>
-                        <h3>Royal Trench Coat</h3>
-                        <div class="product-price-shop"><span class="current-price">₦210,000</span></div>
-                    </div>
-                </div>
-                <div class="product-card-shop">
-                    <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #1E3A2F, #3B4D3F);"><span class="p-icon">💎</span></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/101ee054d32913b5763bf355b87314be81ab94c6.png" alt="Heritage Coral Beads" class="product-img-shop">
                         <div class="product-tag-shop exclusive">EXCLUSIVE</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
                         <span class="product-cat-shop">Accessories</span>
-                        <h3>Crest Chain Necklace</h3>
-                        <div class="product-price-shop"><span class="current-price">₦85,000</span></div>
+                        <h3>Heritage Coral Beads</h3>
+                        <div class="product-price-shop"><span class="current-price">N125,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #2A2A2A, #1E3A2F);"><span class="p-icon">⚡</span></div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/media.enomy.com/1287f6332d922c66bd08fbe9b061b234f5fd9559.jpg" alt="Aso Oke Wrap" class="product-img-shop">
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
-                        <span class="product-cat-shop">Tops</span>
-                        <h3>Gothic Crest Tee</h3>
-                        <div class="product-price-shop"><span class="current-price">₦55,000</span></div>
+                        <span class="product-cat-shop">Textiles</span>
+                        <h3>Aso Oke Wrap</h3>
+                        <div class="product-price-shop"><span class="current-price">N95,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #3B4D3F, #0D1F17);"><span class="p-icon">🏛</span></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/a0c30de5611fc26e7293aba6a69e4bbfbd199ea1.png" alt="Imperial Agbada" class="product-img-shop">
                         <div class="product-tag-shop">NEW</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
-                    </div>
-                    <div class="product-info-shop">
-                        <span class="product-cat-shop">Bottoms</span>
-                        <h3>Heritage Cargo Pants</h3>
-                        <div class="product-price-shop"><span class="current-price">₦95,000</span></div>
-                    </div>
-                </div>
-                <div class="product-card-shop">
-                    <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #1E3A2F, #2D5A3D);"><span class="p-icon">🦅</span></div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
                         <span class="product-cat-shop">Outerwear</span>
-                        <h3>Eagle Bomber Jacket</h3>
-                        <div class="product-price-shop"><span class="current-price">₦165,000</span></div>
+                        <h3>Imperial Agbada</h3>
+                        <div class="product-price-shop"><span class="current-price">N285,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #0D1F17, #3B4D3F);"><span class="p-icon">👑</span></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/africanthings.org/fa2447e0a7a3dda9924f183f12ed9b492508e665.jpeg" alt="Heritage Leather Sandals" class="product-img-shop">
                         <div class="product-tag-shop exclusive">EXCLUSIVE</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
                         <span class="product-cat-shop">Footwear</span>
-                        <h3>Royal Chelsea Boots</h3>
-                        <div class="product-price-shop"><span class="current-price">₦220,000</span></div>
+                        <h3>Heritage Leather Sandals</h3>
+                        <div class="product-price-shop"><span class="current-price">N75,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #2D5A3D, #1A1A1A);"><span class="p-icon">⛓</span></div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/roseafricanfabrics.co.uk/79410fc9ce161c071c4dbbd42ae73f350aed83d4.jpg" alt="Green Gold Ankara" class="product-img-shop">
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
+                    </div>
+                    <div class="product-info-shop">
+                        <span class="product-cat-shop">Textiles</span>
+                        <h3>Green Gold Ankara</h3>
+                        <div class="product-price-shop"><span class="current-price">N45,000</span></div>
+                    </div>
+                </div>
+                <div class="product-card-shop">
+                    <div class="product-image-shop">
+                        <img src="https://kimi-web-img.moonshot.cn/img/afrilege.com/3332191bb9fa77a1ca31bf9697f2b94deb875b0b.jpg" alt="Coral and Gold Bracelet" class="product-img-shop">
+                        <div class="product-tag-shop">NEW</div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
                         <span class="product-cat-shop">Accessories</span>
-                        <h3>Crest Ring Set</h3>
-                        <div class="product-price-shop"><span class="current-price">₦65,000</span></div>
+                        <h3>Coral and Gold Bracelet</h3>
+                        <div class="product-price-shop"><span class="current-price">N55,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #1A1A1A, #1E3A2F);"><span class="p-icon">🛡</span></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/i.ebayimg.com/7b25d5e6fbe050857fc13a40604e8f0d66327353.JPG" alt="Royal Coral Set" class="product-img-shop">
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
+                    </div>
+                    <div class="product-info-shop">
+                        <span class="product-cat-shop">Accessories</span>
+                        <h3>Royal Coral Set</h3>
+                        <div class="product-price-shop"><span class="current-price">N165,000</span></div>
+                    </div>
+                </div>
+                <div class="product-card-shop">
+                    <div class="product-image-shop">
+                        <img src="https://kimi-web-img.moonshot.cn/img/capkings.ng/bcab98af07c9452f18d7dae689ca6e37a2ab6181.jpg" alt="Beaded Fila Cap" class="product-img-shop">
+                        <div class="product-tag-shop exclusive">EXCLUSIVE</div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
+                    </div>
+                    <div class="product-info-shop">
+                        <span class="product-cat-shop">Headwear</span>
+                        <h3>Beaded Fila Cap</h3>
+                        <div class="product-price-shop"><span class="current-price">N95,000</span></div>
+                    </div>
+                </div>
+                <div class="product-card-shop">
+                    <div class="product-image-shop">
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/101ee054d32913b5763bf355b87314be81ab94c6.png" alt="Coral Necklace Deluxe" class="product-img-shop">
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
+                    </div>
+                    <div class="product-info-shop">
+                        <span class="product-cat-shop">Accessories</span>
+                        <h3>Coral Necklace Deluxe</h3>
+                        <div class="product-price-shop"><span class="current-price">N145,000</span></div>
+                    </div>
+                </div>
+                <div class="product-card-shop">
+                    <div class="product-image-shop">
+                        <img src="https://kimi-web-img.moonshot.cn/img/media.enomy.com/1287f6332d922c66bd08fbe9b061b234f5fd9559.jpg" alt="Aso Oke Deluxe" class="product-img-shop">
                         <div class="product-tag-shop">NEW</div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
-                        <span class="product-cat-shop">Tops</span>
-                        <h3>Shield Hoodie</h3>
-                        <div class="product-price-shop"><span class="current-price">₦78,000</span></div>
+                        <span class="product-cat-shop">Textiles</span>
+                        <h3>Aso Oke Deluxe</h3>
+                        <div class="product-price-shop"><span class="current-price">N115,000</span></div>
                     </div>
                 </div>
                 <div class="product-card-shop">
                     <div class="product-image-shop">
-                        <div class="product-img-placeholder" style="background: linear-gradient(145deg, #3B4D3F, #2D5A3D);"><span class="p-icon">⚔</span></div>
-                        <div class="product-actions"><button class="action-btn">👁</button><button class="action-btn">♡</button><button class="action-btn">+</button></div>
+                        <img src="https://kimi-web-img.moonshot.cn/img/africanthings.org/fa2447e0a7a3dda9924f183f12ed9b492508e665.jpeg" alt="Premium Leather Sandals" class="product-img-shop">
+                        <div class="product-actions"><button class="action-btn">View</button><button class="action-btn">Save</button><button class="action-btn">Add</button></div>
                     </div>
                     <div class="product-info-shop">
-                        <span class="product-cat-shop">Denim</span>
-                        <h3>Green Wash Jeans</h3>
-                        <div class="product-price-shop"><span class="current-price">₦88,000</span></div>
+                        <span class="product-cat-shop">Footwear</span>
+                        <h3>Premium Leather Sandals</h3>
+                        <div class="product-price-shop"><span class="current-price">N95,000</span></div>
                     </div>
                 </div>
             </div>
 
             <div class="pagination">
-                <button class="page-btn">←</button>
+                <button class="page-btn">Prev</button>
                 <button class="page-btn active">1</button>
                 <button class="page-btn">2</button>
                 <button class="page-btn">3</button>
                 <button class="page-btn">4</button>
-                <button class="page-btn">→</button>
+                <button class="page-btn">Next</button>
             </div>
         </div>
     </section>
@@ -238,13 +258,13 @@
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
-                <img src="images/giran-logo-visible.png" alt="GIRAN" class="logo-img">
-                <p>Luxury streetwear forged in rebellion. Built for legacy.</p>
+                <img src="giran-crest-web.png" alt="GIRAN" class="logo-img">
+                <p>Luxury Nigerian fashion forged in rebellion. Built for legacy.</p>
                 <div class="footer-social"><a href="#">IG</a><a href="#">X</a><a href="#">TT</a></div>
             </div>
             <div class="footer-col">
                 <h4>Shop</h4>
-                <ul><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Boots</a></li><li><a href="shop.html">Denim</a></li><li><a href="shop.html">Accessories</a></li></ul>
+                <ul><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Footwear</a></li><li><a href="shop.html">Textiles</a></li><li><a href="shop.html">Accessories</a></li></ul>
             </div>
             <div class="footer-col">
                 <h4>Brand</h4>
@@ -255,7 +275,7 @@
                 <ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Size Guide</a></li></ul>
             </div>
         </div>
-        <div class="footer-bottom"><p>© 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p></div>
+        <div class="footer-bottom"><p>(c) 2026 GIRAN. STUBBORN HERITAGE. ALL RIGHTS RESERVED.</p></div>
     </footer>
 
     <script src="js/main.js"></script>
